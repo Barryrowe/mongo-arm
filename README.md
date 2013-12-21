@@ -1,7 +1,18 @@
 MongoDB for ARM
 =========
 
-This is a distribution of the MongoDB binaries built for the ARM architecture. Specifically these were built to run on a Raspberry Pi.
+This is a distribution of the MongoDB binaries built for the ARM architecture. Specifically these were built to run MongoDB on a Raspberry Pi. This was tested and built using a [Model B Pi](http://www.newark.com/raspberry-pi/raspbrry-modb-512m/model-b-assembled-board-only/dp/43W5302) running [Raspbian Wheezy 3.6.11+](http://www.raspbian.org/RaspbianImages) Available for Download [Here](http://www.raspberrypi.org/downloads) 
+
+I can only take credit for compiling these instructions in one place, and providing a compiled set of binaries. These binaries and instructions are based on information from the following links:
+
+[Compiling MongoDB](http://c-mobberley.com/wordpress/index.php/2013/10/14/raspberry-pi-mongodb-installation-the-working-guide/)
+
+[Setting Up MongoDB as A Service](http://stackoverflow.com/questions/17901627/setting-up-mongodb-raspberry-pi)
+
+Issues
+---------
+- The mongo shell causes Segmentation Fault errors when running "show dbs;" and sometimes when querying collections. 
+	**NOTE:** the pymongo driver is tested and works well against this installation process. It appears only the shell has this issue.
 
 Setup Steps:
 ---------
