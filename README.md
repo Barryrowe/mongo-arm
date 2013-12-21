@@ -7,6 +7,8 @@ I can only take credit for compiling these instructions in one place, and provid
 
 [Compiling MongoDB](http://c-mobberley.com/wordpress/index.php/2013/10/14/raspberry-pi-mongodb-installation-the-working-guide/)
 
+[Building MongoDB on the Raspberry Pi - mongopi](http://mongopi.wordpress.com/2012/11/25/installation/)
+
 [Setting Up MongoDB as A Service](http://stackoverflow.com/questions/17901627/setting-up-mongodb-raspberry-pi)
 
 Issues
