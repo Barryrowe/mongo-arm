@@ -16,7 +16,7 @@ Issues
 - The mongo shell causes Segmentation Fault errors when running "show dbs;" and sometimes when querying collections. 
 	**NOTE:** the pymongo driver is tested and works well against this installation process. It appears only the shell has this issue.
 
-Setup Steps:
+Installation Steps:
 ---------
 
 1. Download binaries
@@ -59,43 +59,46 @@ Setup Steps:
 	sudo chown mongo:mongo /data/db
 	```
 
-7. Copy **config/mongodb** to the init.d location
+Set As Service Steps (Debian)
+---------
+
+1. Copy **config/mongodb** to the init.d location
 
 	```bash
 	sudo cp init.d/mongodb /etc/init.d/mongodb
 	```
 
-8. Update /etc/init.d/mongodb to point to your install path from step 3
+2. Update /etc/init.d/mongodb to point to your install path from step 3
 	
 	A. **Line 50** will need to be modified to point to the mongos executable from your install path in step 3.
 	
 	B. If you created a user with name other than "mongo" in step 2 you will need to update **Line 95** with the user you configured.
 
-9. Update the permissions for the mongodb init.d file so it can be executed
+3. Update the permissions for the mongodb init.d file so it can be executed
 
 	```bash
 	sudo chmod 755 /etc/init.d/mongodb
 	```
 
-10. Copy the **config/mongod.conf** file to /etc/mongod.conf
+4. Copy the **config/mongod.conf** file to /etc/mongod.conf
 
 	```bash
 	sudo cp config/mongod.conf /etc/mongod.conf
 	```
 
-11. Register the mongodb service
+5. Register the mongodb service
 
 	```bash
 	sudo update-rc.d mongodb defaults
 	```
 
-12. Startup the service
+6. Startup the service
 
 	```bash
 	sudo service mongodb start
 	```
 
-Managing MongoDB After Install
+Managing MongoDB After Install and Setting as Service
 ---------
 
 Once installed and configured, you can use these commands to manage the mongodb service you've setup.
