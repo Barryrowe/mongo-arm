@@ -65,7 +65,7 @@ Set As Service Steps (Debian)
 1. Copy **config/mongodb** to the init.d location
 
 	```bash
-	sudo cp init.d/mongodb /etc/init.d/mongodb
+	sudo cp config/mongodb /etc/init.d/mongodb
 	```
 
 2. Update /etc/init.d/mongodb to point to your install path from step 3
