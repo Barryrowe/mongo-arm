@@ -113,3 +113,22 @@ service mongodb status
 #stop the service
 sudo service mongodb stop
 ```
+
+If your mongodb service won't start you might just get output like this:
+
+```bash
+....] Starting database: mongod/etc/init.d/mongodb: 131: ulimit: Illegal option -u
+numactl: 
+daemuser: mongo
+pidfile: /var/run/mongod.pid
+daem: /opt/mongo/bin/mongod
+daemopts: -- --config /etc/mongod.conf
+. failed
+```
+***NOTE:*** In this case, make sure to check the ***/data/db/*** directory for a file ***mongod.lock***. If mongodb isn't stopped cleanly, the mongod process can leave this lock file in place preventing the service from properly starting. Usually you can just remove the file and mongodb will start normally
+
+```bash
+#remove mongod.lock file after unclean shutdown
+sudo rm /data/db/mongod.lock
+```
+
