@@ -1,3 +1,5 @@
+**NOTE January 7th, 2015:** I have not been actively working on this project, and realize the binaries are quite old (v2.1.1). I started this as a proof of concept, and have stopped work on the project it supported. The MongoDB team is working on ARM support, but it relies on several large core-unit refactors or re-writes. You can view the status on their JIRA ticket here: [MongoDB Support for ARM JIRA Ticket](https://jira.mongodb.org/browse/SERVER-1811)
+
 MongoDB for ARM
 =========
 
