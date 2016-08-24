@@ -1,3 +1,5 @@
+**NOTE August 24th, 2016:** I was informed today that the JIRA ticket listed below in the last note has been resolved, and that official 64-bit ARM support will be coming in v3.4. It looks like you can find current binaries in the [comments of the JIRA ticket here](https://jira.mongodb.org/browse/SERVER-1811?focusedCommentId=1365439&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-1365439) It does appear that only a 64-bit version is available (and my only ever be available) so take this into account if you're targeting a platform that is only 32-bit.
+
 **NOTE January 7th, 2015:** I have not been actively working on this project, and realize the binaries are quite old (v2.1.1). I started this as a proof of concept, and have stopped work on the project it supported. The MongoDB team is working on ARM support, but it relies on several large core-unit refactors or re-writes. You can view the status on their JIRA ticket here: [MongoDB Support for ARM JIRA Ticket](https://jira.mongodb.org/browse/SERVER-1811)
 
 MongoDB for ARM
